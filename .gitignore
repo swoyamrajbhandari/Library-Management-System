@@ -1,5 +1,2 @@
-PGADMIN_DEFAULT_EMAIL=admin@example.com
-PGADMIN_DEFAULT_PASSWORD=admin
-POSTGRES_USER: postgres
-POSTGRES_PASSWORD: SWOsuj351
-POSTGRES_DB: libraryDB
+.env.db
+.env.pg

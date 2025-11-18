@@ -1,4 +1,5 @@
-import {registerUser, loginUser, updateUsername, deleteUser} from '../model/authModel.js'
+import {registerUser, loginUser, updateUsername, deleteUser, roleChange} from '../model/authModel.js'
+import {addRefreshToken } from '../model/refreshTokenModel.js'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import axios from 'axios' 
@@ -12,14 +13,20 @@ export const registerController =  async (req, res) => {
     
     try {
         const user = await registerUser(username, hashedPassword)
+        console.log(user)
 
         // jwt.sign(payload, secretOrPrivateKey, [options, callback])
         // Can be an object or string. 
         // Represents the claims/data you want to store in the token.
         // Do not put sensitive info (like raw passwords) in the payload
-        const token = jwt.sign({id: user.id, role: user.role}, process.env.JWT_SECRET, {expiresIn: '24h'})  // user = User model(id, username, password)
+        const token = jwt.sign({id: user.id, role: user.role}, process.env.JWT_SECRET, {expiresIn: '15m'})  // user = User model(id, username, password)
+        const refreshToken = jwt.sign({id: user.id, role: user.role}, process.env.JWT_REFRESH_SECRET, {expiresIn: '7d'})
         
-        await axios.post('http://userservice:5001/user', {
+        const hashedRefreshToken = bcrypt.hashSync(refreshToken, 9)
+        
+        const done = await addRefreshToken(user.id, hashedRefreshToken)
+        
+        await axios.post('http://userservice:5001/user/create', {
             userId: user.id,
             username,
             email: null,
@@ -33,7 +40,7 @@ export const registerController =  async (req, res) => {
         })
         
         logger.info(`New user: ${username} registered`)
-        res.json({token})
+        res.json({token, refreshToken})
 
     } catch (err) {
         logger.error(err.message)
@@ -61,9 +68,15 @@ export const loginController = async (req, res) => {
         }
 
         const token = jwt.sign({id: user.id, role: user.role}, process.env.JWT_SECRET, {expiresIn: '24h'})  // user = User model(id, username, password)
+        const refreshToken = jwt.sign({id: user.id, role: user.role}, process.env.JWT_REFRESH_SECRET, {expiresIn: '7d'})
         
+        const hashedRefreshToken = bcrypt.hashSync(refreshToken, 9)
+        
+        await addRefreshToken(user.id, hashedRefreshToken)
+        console.log(refreshToken)
+
         logger.info(`User: ${username} logged in`)
-        res.json({token})
+        res.json({token, refreshToken})
 
 
     } catch (err) {
@@ -108,3 +121,28 @@ export const deleteUserController = async (req, res) => {
 
     }
 }
+
+export const changeUserRole = async (req, res) => {
+    const targetId = parseInt(req.params.id)
+    const {role} = req.user
+    const newRole = req.body.role
+
+    if (targetId === 1){
+        return res.status(401).send(`Can't change admin's role`)
+    }
+
+    try {
+        const changedRole = await roleChange(targetId, newRole)
+        console.log(changedRole)
+
+        logger.info(`User ${targetId} has been assigned to a ${newRole} position`)
+        res.status(201).send(`User ${targetId} has been assigned to a ${newRole} position`)
+
+    } catch (err) {
+        logger.info(`User ${targetId} not found`)
+
+        return res.status(401).send(`User not found`)
+    }
+}
+
+

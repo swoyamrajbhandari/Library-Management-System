@@ -32,6 +32,6 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options)
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
-app.use('/user', userMiddleware, userInfoRoutes)
+app.use('/user', userMiddleware,  userInfoRoutes)
 
 app.listen(5001, () => console.log(`Server is running on PORT${PORT}`))

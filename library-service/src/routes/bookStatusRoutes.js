@@ -1,5 +1,7 @@
 import {Router} from 'express'
 import {copyListController, copyController, copyCreateController, updateCopyController, deleteCopyController} from '../controller/copyController.js'
+import {enforcePermissions} from '../../shared-middleware/authorizationMiddleware.js'  // in container(library-service), it's inside /app/shared-middleware/..
+                                                                                                                //so we go from: /app/src/routes/bookRoutes.js
 
 const router = Router()
 
@@ -25,7 +27,7 @@ const router = Router()
  *             200:
  *                 description: To test Get method
  */
-router.get('/copies', copyListController)
+router.get('/copies', enforcePermissions, copyListController)
 
 /**
  * @swagger
@@ -46,7 +48,7 @@ router.get('/copies', copyListController)
  *             200:
  *                 description: To test Get method
  */
-router.get('/copies/:id', copyController)
+router.get('/copies/:id', enforcePermissions, copyController)
 
 /**
  * @swagger
@@ -84,11 +86,11 @@ router.get('/copies/:id', copyController)
  *             200:
  *                 description: To test POST method
  */
-router.post('/:id/copy', copyCreateController)
+router.post('/:id/copy', enforcePermissions, copyCreateController)
 
 /**
  * @swagger
- * /library/copies/{id}:
+ * /library/copies/update/{id}:
  *  put:
  *      summary: Check if POST method is working
  *      description: This API is used to check if POST method is working or not
@@ -110,11 +112,11 @@ router.post('/:id/copy', copyCreateController)
  *             200:
  *                 description: To test POST method
  */
-router.put('/copies/:id', updateCopyController)
+router.put('/copies/update/:id', enforcePermissions, updateCopyController)
 
 /**
  * @swagger
- * /library/copies/{id}:
+ * /library/copies/delete/{id}:
  *  delete:
  *      summary: Check if DELETE method is working
  *      description: This API is used to check if DELETE method is working or not
@@ -131,7 +133,7 @@ router.put('/copies/:id', updateCopyController)
  *             200:
  *                 description: To test DELETE method
  */
-router.delete('/copies/:id', deleteCopyController)
+router.delete('/copies/delete/:id', enforcePermissions, deleteCopyController)
 
 
 export default router

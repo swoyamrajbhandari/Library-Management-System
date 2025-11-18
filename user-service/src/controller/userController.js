@@ -4,10 +4,10 @@ import axios from 'axios'
 
 // Gets the list of all users
 export const userListController = async (req, res) => {
-    if (req.user.role !== 'admin') {
-        logger.warn(`Permission denied: User ${req.user.id} tried to access list of users`)
-        return res.send('Permission denied!')
-    }
+    // if (req.user.role !== 'admin') {
+    //     logger.warn(`Permission denied: User ${req.user.id} tried to access list of users`)
+    //     return res.send('Permission denied!')
+    // }
     
     const users = await userList()
     logger.info('Got list of users')
@@ -18,10 +18,10 @@ export const userListController = async (req, res) => {
 // Gets the user for given id
 export const findUserController = async (req, res) => {
     const id = parseInt(req.params.id)
-    if (req.user.role !== 'admin' && id !== req.user.id) {
-        logger.warn(`Permission denied: User ${req.user.id} tried to access User ${id}`)
-        return res.send('Permission denied!')
-    }
+    // if (req.user.role !== 'admin' && id !== req.user.id) {
+    //     logger.warn(`Permission denied: User ${req.user.id} tried to access User ${id}`)
+    //     return res.send('Permission denied!')
+    // }
 
     const user = await findUser(id)
 
@@ -56,16 +56,16 @@ export const updateUserInfo = async (req, res) => {
     const data = req.body
     console.log(req.user.role)
     
-    if (req.user.role !=='admin' && req.user.id !== target  ) {
-        logger.warn(`Permission denied: User ${req.user.id} tried to access User ${target}`)
-        return res.status(403).send('Permission denied')
-    }
+    // if (req.user.role !=='admin' && req.user.id !== target  ) {
+    //     logger.warn(`Permission denied: User ${req.user.id} tried to access User ${target}`)
+    //     return res.status(403).send('Permission denied')
+    // }
 
     let update
     try {
         update = await updateUser(target, data)
 
-        await axios.put(`http://authservice:5000/auth/${target}`, {
+        await axios.put(`http://authservice:5000/auth/update/${target}`, {
             username: update.username
 
         }, {
@@ -88,14 +88,14 @@ export const updateUserInfo = async (req, res) => {
 export const deleteUserController = async (req, res) => {
     const userId = parseInt(req.params.id)
 
-    if (req.user.role !== 'admin' && userId !== req.user.id) {
-        logger.warn(`Permission denied: User ${req.user.id} tried to delete User ${target}`)
-        return res.send('Permission denied!')
-    }
+    // if (req.user.role !== 'admin' && userId !== req.user.id) {
+    //     logger.warn(`Permission denied: User ${req.user.id} tried to delete User ${target}`)
+    //     return res.send('Permission denied!')
+    // }
     try{
         await deleteUser(userId)
 
-        await axios.delete(`http://authservice:5000/auth/${userId}`,{
+        await axios.delete(`http://authservice:5000/auth/delete/${userId}`,{
             headers: {
                 "Content-type": "application/json"
             }

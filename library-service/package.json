@@ -16,6 +16,7 @@
     "@logtail/winston": "^0.5.6",
     "@prisma/client": "^6.19.0",
     "axios": "^1.13.1",
+    "casbin": "^5.41.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",

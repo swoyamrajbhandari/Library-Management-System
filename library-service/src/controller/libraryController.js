@@ -23,10 +23,10 @@ export const bookController = async (req, res) => {
 }
 
 export const createBookController = async (req, res) => {
-    if (req.user.role !== 'admin') {
-        loggers.warn(`Permission denied: User ${req.user.id} tried to create a book`)
-        return res.status(501).send('Access denied')
-    }
+    // if (req.user.role !== 'admin') {
+    //     loggers.warn(`Permission denied: User ${req.user.id} tried to create a book`)
+    //     return res.status(501).send('Access denied')
+    // }
 
     const data = req.body
     const newBook = await createBook(data)
@@ -40,10 +40,10 @@ export const createBookController = async (req, res) => {
 export const updateBookController = async (req, res) => {
     const id = parseInt(req.params.id)
     const newData = req.body
-    if (req.user.role !== 'admin') { 
-        loggers.warn(`Permission denied: User ${req.user.id} tried to update a books data`)
-        return res.status(501).send('Access denied')
-    }
+    // if (req.user.role !== 'admin') { 
+    //     loggers.warn(`Permission denied: User ${req.user.id} tried to update a books data`)
+    //     return res.status(501).send('Access denied')
+    // }
     
     const editBook = await updateBook(id, newData)
     loggers.info(`Updated book with id: ${id}`)
@@ -54,10 +54,10 @@ export const updateBookController = async (req, res) => {
 
 export const deleteBookController = async (req, res) => {
     const id = parseInt(req.params.id)
-    if (req.user.role !== 'admin'){ 
-        loggers.warn(`Permission denied: User ${req.user.id} tried to delete a book`)
-        return res.status(501).send('Access denied')
-    }
+    // if (req.user.role !== 'admin'){ 
+    //     loggers.warn(`Permission denied: User ${req.user.id} tried to delete a book`)
+    //     return res.status(501).send('Access denied')
+    // }
 
     await deleteBook(id)
     

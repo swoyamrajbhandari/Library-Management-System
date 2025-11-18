@@ -46,3 +46,18 @@ export async function deleteUser(id) {
     })
 
 }
+
+export async function roleChange(targetId, newRole) {
+    const newPosition = await prisma.user.update({
+        where:{
+            id: targetId
+        },
+        data: {
+            role: newRole
+        }
+    })
+    return newPosition
+    
+
+}
+

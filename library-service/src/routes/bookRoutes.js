@@ -1,5 +1,7 @@
 import {Router} from 'express'
 import {bookListController, bookController, createBookController, updateBookController, deleteBookController} from '../controller/libraryController.js'
+import {enforcePermissions} from '../../shared-middleware/authorizationMiddleware.js'  // in container(library-service), it's inside /app/shared-middleware/..
+                                                                                                                //so we go from: /app/src/routes/bookRoutes.js
 
 const router = Router()
 
@@ -25,7 +27,7 @@ const router = Router()
  *             200:
  *                 description: To test Get method
  */
-router.get('/book', bookListController)
+router.get('/book', enforcePermissions, bookListController)
 
 /**
  * @swagger
@@ -46,7 +48,7 @@ router.get('/book', bookListController)
  *             200:
  *                 description: To test Get method
  */
-router.get('/book/:id', bookController)
+router.get('/book/:id', enforcePermissions, bookController)
 
 /**
  * @swagger
@@ -72,7 +74,7 @@ router.get('/book/:id', bookController)
 
 /**
  * @swagger
- * /library/book:
+ * /library/book/create:
  *  post:
  *      summary: Check if POST method is working
  *      description: This API is used to check if POST method is working or not
@@ -88,11 +90,11 @@ router.get('/book/:id', bookController)
  *             200:
  *                 description: To test POST method
  */
-router.post('/book', createBookController)
+router.post('/book/create', enforcePermissions, createBookController)
 
 /**
  * @swagger
- * /library/book/{id}:
+ * /library/book/update/{id}:
  *  put:
  *      summary: Check if PUT method is working
  *      description: This API is used to check if PUT method is working or not
@@ -115,11 +117,11 @@ router.post('/book', createBookController)
  *             200:
  *                 description: To test PUT method
  */
-router.put('/book/:id', updateBookController)
+router.put('/book/update/:id', enforcePermissions, updateBookController)
 
 /**
  * @swagger
- * /library/book/{id}:
+ * /library/book/delete/{id}:
  *  delete:
  *      summary: Check if DELETE method is working
  *      description: This API is used to check if DELETE method is working or not
@@ -136,6 +138,6 @@ router.put('/book/:id', updateBookController)
  *             200:
  *                 description: To test DELETE method
  */
-router.delete('/book/:id', deleteBookController)
+router.delete('/book/delete/:id', enforcePermissions, deleteBookController)
 
 export default router

@@ -1,5 +1,7 @@
 import {Router} from 'express'
 import {userListController, findUserController, userCreate, updateUserInfo, deleteUserController} from '../controller/userController.js'
+import {enforcePermissions} from '../../shared-middleware/authorizationMiddleware.js'  // in container(user-service), it's inside /app/shared-middleware/..
+                                                                                                                //so we go from: /app/src/routes/userRoutes.js
 
 const router = Router()
 
@@ -17,7 +19,7 @@ const router = Router()
 // token(security) back when that specific endpoint is accessed
 /**
  * @swagger
- * /user:
+ * /user/list:
  *  get:
  *      summary: Check if GET method is working
  *      description: Get all API testing
@@ -27,11 +29,11 @@ const router = Router()
  *             200:
  *                 description: To test Get method
  */
-router.get('/', userListController)
+router.get('/list', enforcePermissions, userListController)
 
 /**
  * @swagger
- * /user/{id}:
+ * /user/info/{id}:
  *  get:
  *      summary: Check if GET method is working
  *      description: Get info of given id using GET testing
@@ -48,7 +50,7 @@ router.get('/', userListController)
  *             200:
  *                 description: To test Get method
  */
-router.get('/:id', findUserController)
+router.get('/info/:id', enforcePermissions, findUserController)
 
 /**
  * @swagger
@@ -68,11 +70,11 @@ router.get('/:id', findUserController)
 
 // only called when new registers, hence didnt document it for swagger
 // better to have a 1-to-1 relation with registering
-router.post('/', userCreate)
+router.post('/create', userCreate)
 
 /**
  * @swagger
- * /user/{id}:
+ * /user/update/{id}:
  *  put:
  *      summary: Check if PUT method is working
  *      description: Get info of given id using PUT testing
@@ -95,12 +97,12 @@ router.post('/', userCreate)
  *             200:
  *                 description: To test PUT method
  */
-router.put('/:id', updateUserInfo)
+router.put('/update/:id',enforcePermissions, updateUserInfo)
 
 
 /**
  * @swagger
- * /user/{id}:
+ * /user/delete/{id}:
  *  delete:
  *      summary: Check if DELETE method is working
  *      description: Get info of given id using PUT testing
@@ -117,6 +119,6 @@ router.put('/:id', updateUserInfo)
  *             200:
  *                 description: To test DELETE method
  */
-router.delete('/:id', deleteUserController)
+router.delete('/delete/:id', enforcePermissions, deleteUserController)
 
 export default router

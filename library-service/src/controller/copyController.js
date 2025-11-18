@@ -24,10 +24,10 @@ export const copyController = async (req, res) => {
 export const copyCreateController = async (req, res) => {
     const bookId = parseInt(req.params.id) 
     const data = req.body
-    if (req.user.role !== 'admin') {
-        loggers.warn(`Permission denied: User ${req.user.id} tried to create a copy of book with id: ${bookId}`)
-        return res.status(501).send('Access denied')
-    }
+    // if (req.user.role !== 'admin') {
+    //     loggers.warn(`Permission denied: User ${req.user.id} tried to create a copy of book with id: ${bookId}`)
+    //     return res.status(501).send('Access denied')
+    // }
 
     const bookCopy = await copyCreate(bookId, data)
 
@@ -40,10 +40,10 @@ export const copyCreateController = async (req, res) => {
 export const updateCopyController = async (req, res) => {
     const id = parseInt(req.params.id)
     const {status} = req.body
-    if (req.user.role !== 'admin') {
-        loggers.warn(`Permission denied: User ${req.user.id} tried to update book with id: ${id}`)
-        return res.status(501).send('Access denied')
-    }
+    // if (req.user.role !== 'admin') {
+    //     loggers.warn(`Permission denied: User ${req.user.id} tried to update book with id: ${id}`)
+    //     return res.status(501).send('Access denied')
+    // }
 
     let copy
     try {
@@ -64,10 +64,10 @@ export const updateCopyController = async (req, res) => {
 // Deletes a copy of a book
 export const deleteCopyController = async (req, res) => {
     const id = parseInt(req.params.id)
-    if (req.user.role !== 'admin') {
-        loggers.warn(`Permission denied: User ${req.user.id} tried to delete book with id: ${id}`)
-        return res.status(501).send('Access denied')
-    }
+    // if (req.user.role !== 'admin') {
+    //     loggers.warn(`Permission denied: User ${req.user.id} tried to delete book with id: ${id}`)
+    //     return res.status(501).send('Access denied')
+    // }
 
     try {
         const deleted = await deleteCopy(id)

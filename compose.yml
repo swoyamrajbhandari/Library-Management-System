@@ -9,8 +9,9 @@ services:
       - ./auth-service/.env
     volumes:
       - ./auth-service:/app         # bind mount code for dev
+      - ./shared-middleware:/app/shared-middleware  # bind mount the root middleware to each services /app/
       - /app/node_modules           # anonymous volume to protect container modules
-    command: sh -c "npx prisma generate && npx prisma migrate deploy && npm run dev"
+    command: sh -c "npm install && npx prisma generate && npx prisma migrate deploy && npm run dev"
 
 
   userservice:
@@ -23,8 +24,9 @@ services:
       - ./user-service/.env
     volumes:
       - ./user-service:/app         # bind mount code for dev
+      - ./shared-middleware:/app/shared-middleware
       - /app/node_modules           # anonymous volume to protect container modules
-    command: sh -c "npx prisma generate && npx prisma migrate deploy && npm run dev"
+    command: sh -c "npm install && npx prisma generate && npx prisma migrate deploy && npm run dev"
 
   libraryservice:
     depends_on:
@@ -36,8 +38,9 @@ services:
       - ./library-service/.env
     volumes:
       - ./library-service:/app         # bind mount code for dev
+      - ./shared-middleware:/app/shared-middleware
       - /app/node_modules           # anonymous volume to protect container modules
-    command: sh -c "npx prisma generate && npx prisma migrate deploy && npm run dev"
+    command: sh -c "npm install && npx prisma generate && npx prisma migrate deploy && npm run dev"
 
   db:
     image: postgres:16

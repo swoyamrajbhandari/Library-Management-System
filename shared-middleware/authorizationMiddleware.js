@@ -36,16 +36,18 @@ async function enforcePermissions(req, res, next) {
     const targetId = req.params?.id ? parseInt(req.params.id) : '*'
 
     const enforcer = await getEnforcer()
-    console.log(enforcer)
-    console.log({role, obj: routeToResource[obj] , action: actions[request], targetId, owner})
+    // console.log(enforcer)
+    // console.log({role, obj: routeToResource[obj] , action: actions[request], targetId, owner})
 
     const allowed = await enforcer.enforce(role, routeToResource[obj], actions[request], targetId, owner)
 
-    console.log('Allowed?', allowed)
+    // console.log('Allowed?', allowed)
     if (!allowed) {
         return res.status(402).send(`Authorization not given to user: ${owner} for ${actions[request]} on ${ routeToResource[obj]} `)
     }
+    
     next()
+    
 
 } 
 

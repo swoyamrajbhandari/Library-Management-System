@@ -19,8 +19,6 @@ export async function getEnforcer () {
     if (!enforcer) {
             
         const adapter = await PrismaAdapter.newAdapter(prisma)
-        console.log(adapter)
-
 
         enforcer = await newEnforcer(
             path.join(__dirname, 'model.conf'),
@@ -37,14 +35,6 @@ export async function getEnforcer () {
         // }
 
         await enforcer.loadPolicy()
-
-
-        const policies = await enforcer.getFilteredPolicy(0, '')
-        console.log('Policies via filtered:', policies)
-
-        const canUserUpdate = await enforcer.enforce('admin', 'auth.role', 'update', 2,1 )
-        console.log('Users can:' ,canUserUpdate)
-
 
     }
     return enforcer

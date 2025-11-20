@@ -33,11 +33,11 @@ async function enforcePermissions(req, res, next) {
     const request = req.method.toUpperCase()
     const obj = req.baseUrl + (req.route?.path || req.path)
     // extract the route id (or null)
-    console.log(req.params.id)
     const targetId = req.params?.id ? parseInt(req.params.id) : '*'
 
     const enforcer = await getEnforcer()
-    console.log({role, obj, action: actions[request], targetId, owner})
+    console.log(enforcer)
+    console.log({role, obj: routeToResource[obj] , action: actions[request], targetId, owner})
 
     const allowed = await enforcer.enforce(role, routeToResource[obj], actions[request], targetId, owner)
 

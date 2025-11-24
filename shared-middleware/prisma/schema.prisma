@@ -24,3 +24,14 @@ model CasbinRule {
 
   @@map("casbin_rule")
 }
+
+model APIRoutes {
+  id               Int         @id @default(autoincrement())
+  method           String
+  route            String
+  resource         String
+  action           String
+
+  @@map("api_routes")
+  
+}

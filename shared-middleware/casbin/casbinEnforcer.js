@@ -6,7 +6,8 @@ import {PrismaAdapter} from 'casbin-prisma-adapter'
 // import logger from '../../loggers.js'
 import { PrismaClient } from '@prisma/client'
 
-const prisma = new PrismaClient()
+export const prisma = new PrismaClient()
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,7 +27,6 @@ export async function getEnforcer () {
         )
         enforcer.enableLog(true);
 
-        // await enforcer.loadPolicy()
         // if ((await enforcer.getPolicy()).length === 0) {
         //     await enforcer.addPolicy('admin', 'auth.role', 'update', '*', 'allow');
         //     await enforcer.addGroupingPolicy('admin', 'librarian');

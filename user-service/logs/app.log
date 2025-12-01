@@ -1,0 +1,48 @@
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:05:00.504Z'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:05:00.649Z'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:09:31.966Z'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:09:31.980Z'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:09:32.012Z'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:14:42.081Z'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:14:42.099Z'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'User Service',
+  timestamp: '2025-12-01T09:14:42.136Z'
+}

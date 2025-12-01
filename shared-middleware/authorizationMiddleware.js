@@ -1,7 +1,9 @@
 import {getEnforcer} from './casbin/casbinEnforcer.js'
-import {getResource} from './casbinModel.js'
+import axios from 'axios'
+import logger from './loggers.js'
 
 async function enforcePermissions(req, res, next) {
+    const token = req.headers['authorization']
 
     // const token = req.headers['authorization']
     const {id: owner, role} = req.user
@@ -10,15 +12,25 @@ async function enforcePermissions(req, res, next) {
     // extract the route id (or null)
     const targetId = req.params?.id ? parseInt(req.params.id) : '*'
 
-    const {resource, action} = await getResource(request, obj)
+    const response = await axios.post('http://routeservice:5003/route/resource', {   //Axios returns an object shaped like this:
 
+                                                                                    // {
+                                                                                    // data: { resource: "...", action: "..." },
+                                                                                    // status: 200,
+                                                                                    // headers: {...}
+                                                                                    // }
+        request,
+        obj
+    })
+
+    const {resource, action} = response.data
     const enforcer = await getEnforcer()
 
     const allowed = await enforcer.enforce(role, resource, action, targetId, owner)
-    console.log(allowed)
+    logger.info(allowed)
 
-    // console.log('Allowed?', allowed)
     if (!allowed) {
+        logger.info(`Authorization not given to user: ${owner} for ${action} on ${resource}`)
         return res.status(402).send(`Authorization not given to user: ${owner} for ${action} on ${resource} `)
     }
     

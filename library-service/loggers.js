@@ -19,6 +19,7 @@ const logger = winston.createLogger({
     ),
     transports: [
         new winston.transports.Console(),
+        new winston.transports.File({filename: 'logs/app.log'}),
         new LogtailTransport(logtail)
     ],
     defaultMeta: {service: 'Library Service'} // any custom key-value pair we want to add

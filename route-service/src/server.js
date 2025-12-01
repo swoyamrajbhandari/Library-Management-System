@@ -1,18 +1,13 @@
 import express from 'express'
-import authRoutes from './routes/authRoutes.js'
-import refreshTokenRoutes from './routes/refreshTokenRoute.js'
-import permissionRoutes from './routes/permissionRoute.js'
-import {main, seedCasbinRules, seedCasbinFromCSV} from './seed.js'
-import cors from 'cors'
 import swaggerJSDoc from 'swagger-jsdoc'
 import swaggerUi from 'swagger-ui-express'
-import logger from '../loggers.js' 
-import axios from 'axios'
+import cors from 'cors'
+import routes from './routes/routes.js'
 import extractRoutes from '../shared-middleware/extractRoutes.js'
-import authenticizeJWT from './middleware/authMiddleware.js'
-import { enforcePermissions } from '../shared-middleware/authorizationMiddleware.js'
+import axios from 'axios'
+import logger from '../loggers.js'
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5003
 
 const app = express()
 
@@ -24,12 +19,12 @@ const options = {
     definition: {
         openapi : '3.0.0',
         info : {
-            title: 'Authentication service testing',
+            title: 'Router service testing',
             version: '1.0.0'
         },
         servers: [
             {
-               url: 'http://localhost:5000'
+               url: 'http://localhost:5003'
             }, 
     
         ]
@@ -40,18 +35,15 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options)
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
-
-app.use('/auth', authRoutes)
-app.use('/auth', refreshTokenRoutes)
-app.use('/auth', authenticizeJWT, enforcePermissions, permissionRoutes)
+app.use('/route', routes )
 
 async function routeSync() {
-    const registerRoutes = await extractRoutes(app, '/auth')
-    // logger.info(registerRoutes)
+    const registerRoutes = await extractRoutes(app, '/route')
+    //logger.info(registerRoutes)
 
     logger.info("Sending axios request...")
     const res = await axios.post("http://routeservice:5003/route/sync", {
-        service:"authservice",
+        service:"routeservice",
         registerRoutes
 
     })
@@ -61,13 +53,8 @@ async function routeSync() {
 
 async function startServer(){
     try {
-        logger.info('Running seed...')
-        await main()
-        await seedCasbinRules()
-        await seedCasbinFromCSV()
-        logger.info('Seed complete')
 
-        app.listen(5000, () => {
+        app.listen(5003, () => {
             logger.info(`Server is running on PORT${PORT}`)
         })
 
@@ -88,3 +75,4 @@ async function startServer(){
 }
 
 startServer()
+

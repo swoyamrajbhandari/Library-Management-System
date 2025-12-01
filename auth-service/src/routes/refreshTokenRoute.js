@@ -1,6 +1,6 @@
 import {Router} from 'express'
 import {generateAndRefreshToken, revokeRefreshToken} from '../controller/refreshTokenController.js'
-import {authenticizeJWT} from '../middleware/authMiddleware.js'
+import authenticizeJWT from '../middleware/authMiddleware.js'
 import {enforcePermissions} from '../../shared-middleware/authorizationMiddleware.js'  // in container(auth-service), it's inside /app/shared-middleware/..
                                                                                                                 //so we go from: /app/src/
 

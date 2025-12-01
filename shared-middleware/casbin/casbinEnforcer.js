@@ -3,11 +3,8 @@ import { fileURLToPath } from 'url';
 import {newEnforcer} from 'casbin'
 // import PGAdapter from 'casbin-prisma-adapter'
 import {PrismaAdapter} from 'casbin-prisma-adapter'
-// import logger from '../../loggers.js'
-import { PrismaClient } from '@prisma/client'
-
-export const prisma = new PrismaClient()
-
+import logger from '../loggers.js'
+import prisma from '../prismaClient.js'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -31,7 +28,7 @@ export async function getEnforcer () {
         //     await enforcer.addPolicy('admin', 'auth.role', 'update', '*', 'allow');
         //     await enforcer.addGroupingPolicy('admin', 'librarian');
         //     await enforcer.savePolicy();
-        //     console.log('Policies seeded automatically');
+        //     logger.info('Policies seeded automatically');
         // }
 
         await enforcer.loadPolicy()

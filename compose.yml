@@ -2,6 +2,7 @@ services:
   authservice:
     depends_on:
       - db
+      - routeservice
     build: ./auth-service
     ports:
       - "5000:5000"
@@ -17,6 +18,7 @@ services:
   userservice:
     depends_on:
       - db
+      - routeservice
     build: ./user-service
     ports:
       - "5001:5001"
@@ -31,6 +33,7 @@ services:
   libraryservice:
     depends_on:
       - db
+      - routeservice
     build: ./library-service
     ports:
       - "5002:5002"
@@ -41,6 +44,22 @@ services:
       - ./shared-middleware:/app/shared-middleware
       - library_node_modules:/app/node_modules           # anonymous volume to protect container modules
     command: sh -c "npm install && cd shared-middleware && npm install && cd .. && npx prisma generate && npx prisma migrate deploy && npm run dev"
+
+  routeservice:
+    depends_on:
+      - db
+    build: ./route-service
+    ports:
+      - "5003:5003"
+    env_file:
+      - ./route-service/.env
+    volumes:
+      - ./route-service:/app
+      - ./shared-middleware:/app/shared-middleware
+      - route_node_modules:/app/node_modules
+    command: sh -c "npm install && cd shared-middleware && npm install && cd .. && npx prisma generate && npx prisma migrate deploy && npm run dev"
+
+
 
   db:
     image: postgres:16
@@ -67,6 +86,7 @@ volumes:
   user_node_modules:
   library_node_modules:
   libraryData:
+  route_node_modules:
   
 
 

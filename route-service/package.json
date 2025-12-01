@@ -1,9 +1,9 @@
 {
-  "name": "auth-service",
+  "name": "route-service",
   "version": "1.0.0",
-  "description": "Checks for username and password authentication and provides jwt token",
+  "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "routes.js",
   "scripts": {
     "dev": "node --watch --env-file=.env ./src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,17 +14,13 @@
   "dependencies": {
     "@logtail/node": "^0.5.6",
     "@logtail/winston": "^0.5.6",
+    "@prisma/adapter-pg": "^7.0.0",
     "@prisma/client": "^6.18.0",
-    "axios": "^1.13.1",
-    "bcrypt": "^6.0.0",
-    "bcryptjs": "^3.0.2",
+    "axios": "^1.13.2",
     "casbin": "^5.41.0",
-    "casbin-pg-adapter": "^1.4.0",
     "casbin-prisma-adapter": "^1.8.0",
     "cors": "^2.8.5",
-    "csv-parser": "^3.2.0",
     "express": "^5.1.0",
-    "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.3",
     "prisma": "^6.18.0",

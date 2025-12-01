@@ -1,6 +1,6 @@
 import {Router} from 'express'
 import {registerController, loginController, updateUserController, deleteUserController, changeUserRole} from '../controller/authController.js'
-import {authenticizeJWT} from '../middleware/authMiddleware.js'
+import authenticizeJWT from '../middleware/authMiddleware.js'
 import {enforcePermissions} from '../../shared-middleware/authorizationMiddleware.js'  // in container(auth-service), it's inside /app/shared-middleware/..
                                                                                                                 //so we go from: /app/src/routes/authRoutes.js
 
@@ -104,6 +104,11 @@ router.delete('/delete/:id', deleteUserController)
  *                 description: To test POST method
  */
 router.put('/role/:id', authenticizeJWT, enforcePermissions, changeUserRole)
+
+// router.get('/permissions', (req, res) => {
+//     console.log('New route')
+
+// })
 
 
 export default router

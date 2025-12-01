@@ -4,6 +4,9 @@ import userInfoRoutes from './routes/userInfoRoutes.js'
 import userMiddleware from './middleware/userMiddleware.js'
 import swaggerJSDoc from 'swagger-jsdoc'
 import swaggerUi from 'swagger-ui-express'
+import logger from '../loggers.js'
+import axios from 'axios'
+import extractRoutes from '../shared-middleware/extractRoutes.js'
 const PORT = process.env.PORT || 5001
 
 const app = express()
@@ -34,4 +37,34 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 app.use('/user', userMiddleware,  userInfoRoutes)
 
-app.listen(5001, () => console.log(`Server is running on PORT${PORT}`))
+async function routeSync() {
+    const registerRoutes = await extractRoutes(app, '/user')
+    //logger.info(registerRoutes)
+
+    logger.info("Sending axios request...")
+    const res = await axios.post("http://routeservice:5003/route/sync", {
+        service:"userservice",
+        registerRoutes
+
+    })
+
+
+}
+
+try {
+        
+    app.listen(5001, () => {
+        logger.info(`Server is running on PORT${PORT}`)
+    })
+
+    try {
+        await routeSync()
+        logger.info("Route sync complete")
+    } catch (err) {
+        logger.error(err.message)
+    }
+
+} catch(err) {
+    logger.error(err.message)
+    process.exit(1)
+}

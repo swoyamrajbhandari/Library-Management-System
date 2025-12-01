@@ -10,7 +10,7 @@ function authenticizeJWT(req, res, next) {
     }
 
     const token = authToken.split(' ')[1]
-    const valid = jwt.verify(token, process.env.JWT_SECRET)
+    // const valid = jwt.verify(token, process.env.JWT_SECRET)
 
     jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
         if (err) {return res.status(401).send('Invalid token')}

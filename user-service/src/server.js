@@ -39,7 +39,6 @@ app.use('/user', userMiddleware,  userInfoRoutes)
 
 async function routeSync() {
     const registerRoutes = await extractRoutes(app, '/user')
-    //logger.info(registerRoutes)
 
     logger.info("Sending axios request...")
     const res = await axios.post("http://routeservice:5003/route/sync", {

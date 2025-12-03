@@ -10,10 +10,6 @@ export const generateAndRefreshToken = async (req, res) => {
         return res.status(401).send('no refresh token provided')
     }
 
-    // if (revoke){
-    //     return res.status(401).send('Refresh token is revoked, please log in again')
-    // }
-
     let decodedRefreshToken;
     try {
         decodedRefreshToken = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET) //decode jwt
@@ -28,12 +24,6 @@ export const generateAndRefreshToken = async (req, res) => {
         logger.info(tokenData)
 
         if (!tokenData){return res.status(401).json({ message: "Token not found"})}
-
-        // logger.info(tokenData)
-        // logger.info(tokenData.revoke)
-        // if (tokenData.revoke === true){
-        //     return res.send('Refresh token revoked')
-        // } 
 
         const valid = await bcrypt.compare(refreshToken, tokenData.refreshToken)
         if(!valid) {return res.status(403).json({ message: "Invalid refresh token" })}
@@ -50,7 +40,6 @@ export const generateAndRefreshToken = async (req, res) => {
 
 export const revokeRefreshToken = async (req, res) => {
     const refreshState = req.body.refreshToken
-    // const state = req.body.revoke
     const decodedRefreshToken = jwt.verify(refreshState, process.env.JWT_REFRESH_SECRET) // decode jwt
     const {id, role} = decodedRefreshToken
     try {

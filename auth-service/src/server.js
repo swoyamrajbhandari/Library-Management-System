@@ -43,11 +43,10 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 app.use('/auth', authRoutes)
 app.use('/auth', refreshTokenRoutes)
-app.use('/auth', authenticizeJWT, enforcePermissions, permissionRoutes)
+app.use('/auth', permissionRoutes)
 
 async function routeSync() {
     const registerRoutes = await extractRoutes(app, '/auth')
-    // logger.info(registerRoutes)
 
     logger.info("Sending axios request...")
     const res = await axios.post("http://routeservice:5003/route/sync", {

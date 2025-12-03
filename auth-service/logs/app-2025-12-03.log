@@ -400,3 +400,1227 @@
   service: 'Authentication Service',
   timestamp: '2025-12-03T14:50:21+05:45'
 }
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Admin user created: admin/adminpass',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.newRule/write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.role/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user\t\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: admin ->  librarian\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.copy.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.copy.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  user/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.book.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.book.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy.status/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:59:27+05:45'
+}
+{
+  message: 'New user: kuuga registered',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:02:19+05:45'
+}
+{
+  message: 'New user: agito registered',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:02:26+05:45'
+}
+{
+  message: 'New user: ryuki registered',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:02:33+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:02:50+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:03:04+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:03:04+05:45'
+}
+{
+  message: 'Recieved casbin rule list',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:03:04+05:45'
+}
+{
+  message: {
+    id: 4,
+    userId: 1,
+    refreshToken: '$2b$09$noWOxG.CMW2t3roHs36J1ulwbktonIBqzqqWazPPJLQltmm5CDa8K',
+    revoke: false,
+    createdAt: 2025-12-03T09:17:50.762Z
+  },
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:03:34+05:45'
+}
+{
+  message: 'User: ryuki logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:03:47+05:45'
+}
+{
+  message: {
+    id: 4,
+    userId: 1,
+    refreshToken: '$2b$09$noWOxG.CMW2t3roHs36J1ulwbktonIBqzqqWazPPJLQltmm5CDa8K',
+    revoke: false,
+    createdAt: 2025-12-03T09:17:50.762Z
+  },
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:03:59+05:45'
+}
+{
+  message: 'Authorization given to user: 4 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:04:04+05:45'
+}
+{
+  message: 'Authorization not given to user: 4 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:04:04+05:45'
+}
+{
+  message: 'Authorization given to user: 4 for read on auth.permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:04:10+05:45'
+}
+{
+  message: 'Authorization not given to user: 4 for read on auth.permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:04:10+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:04:37+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for update on auth.role',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:05:06+05:45'
+}
+{
+  message: 'User 2 has been assigned to a librarian position',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:05:06+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:05:25+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:17:58+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:18:59+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T15:18:59+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:18:59+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:19:26+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Admin user created: admin/adminpass',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.newRule/write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.role/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user\t\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: admin ->  librarian\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.copy.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.copy.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  user/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.book.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.book.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy.status/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T15:56:03+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:00:17+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:02:24+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:02:24+05:45'
+}
+{
+  message: 'No token was provided',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:02:24+05:45'
+}
+{
+  message: 'Failed to notify http://authservice:5000/auth: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:02:24+05:45'
+}
+{
+  message: 'Failed to notify http://userservice:5001/user: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:02:24+05:45'
+}
+{
+  message: 'Failed to notify http://libraryservice:5002/library: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:02:24+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:02:24+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:04:03+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:04:03+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:05:04+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:05:04+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:06:11+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:06:11+05:45'
+}
+{
+  message: 'No token was provided',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:06:11+05:45'
+}
+{
+  message: 'Failed to notify http://authservice:5000/auth: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:06:11+05:45'
+}
+{
+  message: 'Failed to notify http://userservice:5001/user: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:06:11+05:45'
+}
+{
+  message: 'Failed to notify http://libraryservice:5002/library: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:06:11+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:06:11+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:06:56+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:06:56+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:07:41+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:07:41+05:45'
+}
+{
+  message: 'No token was provided',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:07:41+05:45'
+}
+{
+  message: 'Failed to notify http://authservice:5000/auth: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:07:41+05:45'
+}
+{
+  message: 'Failed to notify http://userservice:5001/user: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:07:41+05:45'
+}
+{
+  message: 'Failed to notify http://libraryservice:5002/library: Request failed with status code 401',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:07:41+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:07:41+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:07:49+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:07:49+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:30:55+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:30:55+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:30:55+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:30:55+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:30:55+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:30:55+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:30:55+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:31:55+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:32:08+05:45'
+}
+{
+  message: "Failed to create Casbin rule: Cannot read properties of undefined (reading 'headers')",
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:32:08+05:45'
+}
+{
+  message: 'New user: kuuga registered',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:33:09+05:45'
+}
+{
+  message: 'New user: agito registered',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:33:17+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:33:32+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for update on auth.role',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:34:04+05:45'
+}
+{
+  message: 'User 2 has been assigned to a librarian position',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:34:04+05:45'
+}
+{
+  message: 'User: agito logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:34:39+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:34:47+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:35:00+05:45'
+}
+{
+  message: 'Authorization not given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:35:00+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:36:25+05:45'
+}
+{
+  message: 'Authorization not given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:36:25+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:41:18+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:41:18+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:41:18+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:41:18+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:41:18+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:41:18+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:41:18+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:42:00+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:42:21+05:45'
+}
+{
+  message: "Failed to create Casbin rule: Cannot read properties of undefined (reading 'headers')",
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:42:21+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T16:43:38+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:44:01+05:45'
+}
+{
+  message: 'Authorization not given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T16:44:01+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:00:59+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:00:59+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:00:59+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:00:59+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:00:59+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:00:59+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:00:59+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:01:11+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:01:48+05:45'
+}
+{
+  message: 'Recieved casbin rule list',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:01:48+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:02:04+05:45'
+}
+{
+  message: 'Failed to notify http://authservice:5000/auth: token is not defined',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:02:04+05:45'
+}
+{
+  message: 'Failed to notify http://userservice:5001/user: token is not defined',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:02:04+05:45'
+}
+{
+  message: 'Failed to notify http://libraryservice:5002/library: token is not defined',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:02:04+05:45'
+}
+{
+  message: 'Failed to notify http://routeservice:5003/route: token is not defined',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:02:04+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:02:04+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:02:20+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:02:37+05:45'
+}
+{
+  message: 'Authorization not given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:02:37+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:10:58+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:10:58+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:10:58+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:10:58+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:10:58+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:10:58+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:10:58+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:20+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:20+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:20+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:20+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:20+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:20+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:20+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:12:58+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:13:12+05:45'
+}
+{
+  message: 'Failed to notify http://authservice:5000/auth: Request failed with status code 400',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:13:12+05:45'
+}
+{
+  message: 'Failed to notify http://userservice:5001/user: Request failed with status code 400',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:13:12+05:45'
+}
+{
+  message: 'Failed to notify http://libraryservice:5002/library: Request failed with status code 400',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:13:12+05:45'
+}
+{
+  message: 'Failed to notify http://routeservice:5003/route: Request failed with status code 400',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:13:12+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:13:12+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:13:44+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:13:56+05:45'
+}
+{
+  message: 'Authorization not given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:13:56+05:45'
+}

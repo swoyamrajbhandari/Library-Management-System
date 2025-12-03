@@ -2,6 +2,7 @@ import {Router} from 'express'
 import {ruleList, ruleInfo, ruleCreate, changeRule, deleteRule} from '../controller/permissionController.js'
 import authMiddleware from '../middleware/authMiddleware.js'
 import { enforcePermissions } from '../../shared-middleware/authorizationMiddleware.js'
+import reloadPolicyHandler from '../../shared-middleware/reloadPolicy.js'
 
 const router = Router()
 
@@ -139,5 +140,7 @@ router.put('/permission/update/:id', authMiddleware, enforcePermissions, changeR
  *                 description: To test DELETE method
  */
 router.delete('/permission/delete/:id', authMiddleware, enforcePermissions, deleteRule)
+
+router.post('/casbin/reload', reloadPolicyHandler )
 
 export default router

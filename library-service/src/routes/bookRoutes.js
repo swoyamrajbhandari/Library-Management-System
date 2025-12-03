@@ -2,6 +2,7 @@ import {Router} from 'express'
 import {bookListController, bookController, createBookController, updateBookController, deleteBookController} from '../controller/libraryController.js'
 import {enforcePermissions} from '../../shared-middleware/authorizationMiddleware.js'  // in container(library-service), it's inside /app/shared-middleware/..
                                                                                                                 //so we go from: /app/src/routes/bookRoutes.js
+import reloadPolicyHandler from '../../shared-middleware/reloadPolicy.js'
 
 const router = Router()
 
@@ -139,5 +140,7 @@ router.put('/book/update/:id', enforcePermissions, updateBookController)
  *                 description: To test DELETE method
  */
 router.delete('/book/delete/:id', enforcePermissions, deleteBookController)
+
+router.post('/casbin/reload', reloadPolicyHandler )
 
 export default router

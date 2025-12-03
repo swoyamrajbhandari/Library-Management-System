@@ -2,6 +2,7 @@ import {Router} from 'express'
 import {userListController, findUserController, userCreate, updateUserInfo, deleteUserController} from '../controller/userController.js'
 import {enforcePermissions} from '../../shared-middleware/authorizationMiddleware.js'  // in container(user-service), it's inside /app/shared-middleware/..
                                                                                                                 //so we go from: /app/src/routes/userRoutes.js
+import reloadPolicyHandler from '../../shared-middleware/reloadPolicy.js'
 
 const router = Router()
 
@@ -120,5 +121,7 @@ router.put('/update/:id',enforcePermissions, updateUserInfo)
  *                 description: To test DELETE method
  */
 router.delete('/delete/:id', enforcePermissions, deleteUserController)
+
+router.post('/casbin/reload', reloadPolicyHandler )
 
 export default router

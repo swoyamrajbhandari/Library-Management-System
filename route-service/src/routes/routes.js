@@ -2,6 +2,7 @@ import {Router} from 'express'
 import {getRoutes, getRoute, checkResource, syncRoute, updatedRoute} from '../controller/routeController.js'
 import routeMiddleware from '../middleware/routeMiddleware.js'
 import { enforcePermissions } from '../../shared-middleware/authorizationMiddleware.js'
+import reloadPolicyHandler from '../../shared-middleware/reloadPolicy.js'
 
 const router = Router()
 
@@ -106,5 +107,7 @@ router.post('/sync', syncRoute)
  *                 description: To test PUT method
  */
 router.put('/update/:id', routeMiddleware, enforcePermissions, updatedRoute)
+
+router.post('/casbin/reload', reloadPolicyHandler )
 
 export default router

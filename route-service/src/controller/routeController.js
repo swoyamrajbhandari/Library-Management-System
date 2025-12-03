@@ -1,5 +1,6 @@
 import {routesList, routeInfo, getResource, createRoute, updateRoute} from '../model/apiRouteModel.js'
 import prisma from '../prismaClient.js'
+import logger from '../utils/loggers.js'
 
 export const getRoutes = async (req, res) => {
     try {

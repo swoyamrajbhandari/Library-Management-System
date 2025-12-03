@@ -1,7 +1,7 @@
 import {getEnforcer} from './casbin/casbinEnforcer.js'
 import logger from './loggers.js'
 
-async function reloadPolicyHandler(req, res) {
+async function reloadPolicyHandler(req, res) { //helps reload policy from db everytime data is created/updated/deleted
     try {
         const enforcer = await getEnforcer()
         await enforcer.loadPolicy()

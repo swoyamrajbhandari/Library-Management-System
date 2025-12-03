@@ -14,7 +14,8 @@ let enforcer
 
 export async function getEnforcer () {
 
-    if (!enforcer) {
+    if (!enforcer) {  // only helps create initial enforcer instance, later updates via db are not loaded,
+                    // this is fixed/done via reloadPolicy.js
             
         const adapter = await PrismaAdapter.newAdapter(prisma)
 

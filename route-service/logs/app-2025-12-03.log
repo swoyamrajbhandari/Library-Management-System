@@ -580,3 +580,75 @@
   service: 'Library Service',
   timestamp: '2025-12-03T17:13:56+05:45'
 }
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:17:21+05:45'
+}
+{
+  message: 'Server is running on PORT5003',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:17:21+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:17:21+05:45'
+}
+{
+  message: 'Routes resource',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:18:32+05:45'
+}
+{
+  message: 'Routes resource',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Policy reloaded in this service',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Routes resource',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:19:16+05:45'
+}
+{
+  message: 'Routes resource',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:19:41+05:45'
+}
+{
+  message: 'Routes resource',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:19:59+05:45'
+}
+{
+  message: 'Routes resource',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Policy reloaded in this service',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Routes resource',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:21:27+05:45'
+}

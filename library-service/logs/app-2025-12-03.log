@@ -286,3 +286,33 @@
   service: 'Library Service',
   timestamp: '2025-12-03T17:11:51+05:45'
 }
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:17:22+05:45'
+}
+{
+  message: 'Server is running on PORT5002',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:17:22+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-03T17:17:22+05:45'
+}
+{
+  message: 'Policy reloaded in this service',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Policy reloaded in this service',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}

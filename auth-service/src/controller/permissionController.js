@@ -2,20 +2,20 @@ import {getRuleList, getRuleInfo, createNewRule, updateRule, removeRule} from '.
 import logger from '../utils/loggers.js'
 import axios from 'axios'
 
-const services = [
-    "http://authservice:5000/auth",
-    "http://userservice:5001/user",
-    "http://libraryservice:5002/library",
-    "http://routeservice:5003/route"
-
-]
 
 export async function broadcastPolicyReload(token) { 
+    const services = [
+        "http://authservice:5000/auth",
+        "http://userservice:5001/user",
+        "http://libraryservice:5002/library",
+        "http://routeservice:5003/route"
+
+    ]   
     
     for (const url of services) {
         try {
             await axios.post(`${url}/casbin/reload`, {}, {
-            headers: {
+            headers: {  //required because a lot of routes have jwt middleware inbetween
                 "Content-Type": 'application/json',
                 Authorization: `Bearer ${token}`
             }
@@ -69,7 +69,7 @@ export const ruleInfo = async (req, res) => {
 
 export const ruleCreate = async (req, res) => {
     const data = req.body 
-    const token = req.headers.authorization?.split(' ')[1]
+    const token = req.headers.authorization?.split(' ')[1]  // for reloadPolicy
     try {
         const newRule = await createNewRule(data)
         await broadcastPolicyReload(token)
@@ -87,10 +87,10 @@ export const ruleCreate = async (req, res) => {
 export const changeRule = async (req, res) => {
     const id = parseInt(req.params.id)
     const data = req.body 
-    const token = req.headers.authorization?.split(' ')[1]
+    const token = req.headers.authorization?.split(' ')[1]   // for reloadPolicy
     try {
         const newRule = await updateRule(id, data)
-        await broadcastPolicyReload(token)
+        await broadcastPolicyReload(token)   
 
         logger.info(`Successfully changed a casbin rule`)
         res.status(200).send(`Changed a casbin rule`)
@@ -104,7 +104,7 @@ export const changeRule = async (req, res) => {
 
 export const deleteRule = async (req, res) => {
     const id = parseInt(req.params.id) 
-    const token = req.headers.authorization?.split(' ')[1]
+    const token = req.headers.authorization?.split(' ')[1]   // for reloadPolicy
 
     try {
         const deleted = await removeRule(id)

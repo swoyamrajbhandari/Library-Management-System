@@ -1624,3 +1624,231 @@
   service: 'Casbin middleware',
   timestamp: '2025-12-03T17:13:56+05:45'
 }
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:17:50+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:17:50+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:17:50+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:17:50+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:17:50+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:17:50+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:17:50+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:18:17+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:18:32+05:45'
+}
+{
+  message: 'Recieved casbin rule list',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:18:32+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on auth.permission.newRule',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Policy reloaded in this service',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Successfully notified http://authservice:5000/auth to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Successfully notified http://userservice:5001/user to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Successfully notified http://libraryservice:5002/library to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'Successfully notified http://routeservice:5003/route to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:18:45+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:19:04+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:19:16+05:45'
+}
+{
+  message: 'Recieved casbin rule list',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:19:16+05:45'
+}
+{
+  message: 'User: agito logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:19:31+05:45'
+}
+{
+  message: 'Authorization given to user: 3 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:19:41+05:45'
+}
+{
+  message: 'Authorization not given to user: 3 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:19:41+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:19:50+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:19:59+05:45'
+}
+{
+  message: 'Recieved casbin rule list',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:19:59+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:20:29+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:20:37+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for delete on auth.permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Policy reloaded in this service',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Successfully notified http://authservice:5000/auth to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Successfully notified http://userservice:5001/user to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Successfully notified http://libraryservice:5002/library to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Successfully notified http://routeservice:5003/route to reload policy.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'Successfully deleted a casbin rule',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:20:57+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T17:21:13+05:45'
+}
+{
+  message: 'Authorization given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:21:27+05:45'
+}
+{
+  message: 'Authorization not given to user: 2 for read on auth.permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-03T17:21:27+05:45'
+}

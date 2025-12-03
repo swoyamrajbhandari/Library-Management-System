@@ -130,3 +130,273 @@
   service: 'Authentication Service',
   timestamp: '2025-12-03T10:48:33+05:45'
 }
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Admin user created: admin/adminpass',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission.newRule/write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> auth.permission/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.role/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.book/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user\t\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: admin ->  librarian\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.copy.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.copy.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  user/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  library.copy.status/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:46:59+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.book.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'Imported rule: user ->  library.book.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-03T14:50:21+05:45'
+}

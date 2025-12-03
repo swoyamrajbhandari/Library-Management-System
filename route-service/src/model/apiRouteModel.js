@@ -71,13 +71,33 @@ export async function routeInfo(id){
 
 // axios on startup to add all new routes
 export async function createRoute(routeData){  //here routeData is a single route from the route list sent from extractRoute
-      
+    
+    const {method, path} = routeData
+    const resource = path.split('/').filter(p => p && !p.startsWith(':') && p !== 'update' && p !== 'delete' && p !== 'create').join('.') || 'root'
+
+    let action 
+    if (method === 'POST') {
+        if (resource.includes('login')) {
+            action = 'read' 
+        } else { 
+            action = 'write' 
+        } 
+    } else if (method === 'GET') {
+        action = 'read' 
+    } else if (method === 'PUT') {
+        action = 'update' 
+    } else if (method === 'DELETE') {
+        action = 'delete' 
+    } else { 
+        action = 'unknown' 
+    }
+
     const addRoute = await prisma.aPIRoutes.create({
         data : {
-            method: routeData.method,
-            route: routeData.path,
-            resource: null,
-            action: null
+            method: method,
+            route: path,
+            resource: resource,
+            action: action
         }
 
     })

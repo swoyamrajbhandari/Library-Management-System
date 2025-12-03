@@ -17,7 +17,7 @@ const router = Router()
 
 /**
  * @swagger
- * /library/book:
+ * /library/book/list:
  *  get:
  *      summary: Check if GET method is working
  *      description: Get all API testing
@@ -27,11 +27,11 @@ const router = Router()
  *             200:
  *                 description: To test Get method
  */
-router.get('/book', enforcePermissions, bookListController)
+router.get('/book/list', enforcePermissions, bookListController)
 
 /**
  * @swagger
- * /library/book/{id}:
+ * /library/book/info/{id}:
  *  get:
  *      summary: Check if GET method is working
  *      description: Get all API testing
@@ -48,7 +48,7 @@ router.get('/book', enforcePermissions, bookListController)
  *             200:
  *                 description: To test Get method
  */
-router.get('/book/:id', enforcePermissions, bookController)
+router.get('/book/info/:id', enforcePermissions, bookController)
 
 /**
  * @swagger

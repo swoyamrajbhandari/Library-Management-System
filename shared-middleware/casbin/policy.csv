@@ -1,24 +1,24 @@
 p, admin, auth.role, update, *, allow
 p, admin, user, delete, *, allow
-p, admin, user.info, update, *, allow
+p, admin, user, update, *, allow
 p, admin, auth.logout, delete, *, allow
 p, librarian, user.list, read, *, allow
-p, librarian, book.copy, write, *, allow
-p, librarian, book.copy, delete, *, allow
-p, librarian, book, write, *, allow
-p, librarian, book, delete, *, allow
-p, librarian, book.info, update, *, allow
+p, librarian, library.copy, write, *, allow
+p, librarian, library.copy, delete, *, allow
+p, librarian, library.book, write, *, allow
+p, librarian, library.book, delete, *, allow
+p, librarian, library.book, update, *, allow
 p, librarian, user.info, read, *, allow
 g, librarian, user			
 g, admin, librarian		
-p, user, book.copy.list, read, *, allow
-p, user, book.copy.info, read, *, allow
+p, user, library.copy.list, read, *, allow
+p, user, library.copy.info, read, *, allow
 p, user, auth.logout, delete, self, allow
 p, user, user.info, read, self, allow
-p, user, user.info, update, self, allow
+p, user, user, update, self, allow
 p, user, user, delete, self, allow
-p, user, book.list, read, *, allow
-p, user, book.info, read, *, allow
-p, librarian, book.copy.status, update, *, allow
+p, user, library.book.list, read, *, allow
+p, user, library.book.info, read, *, allow
+p, librarian, library.copy.status, update, *, allow
 
 

@@ -17,7 +17,7 @@ const router = Router()
 
 /**
  * @swagger
- * /library/copies:
+ * /library/copy/list:
  *  get:
  *      summary: Check if GET method is working
  *      description: Get all API testing
@@ -27,11 +27,11 @@ const router = Router()
  *             200:
  *                 description: To test Get method
  */
-router.get('/copies', enforcePermissions, copyListController)
+router.get('/copy/list', enforcePermissions, copyListController)
 
 /**
  * @swagger
- * /library/copies/{id}:
+ * /library/copy/info/{id}:
  *  get:
  *      summary: Check if GET method is working
  *      description: Get all API testing
@@ -48,7 +48,7 @@ router.get('/copies', enforcePermissions, copyListController)
  *             200:
  *                 description: To test Get method
  */
-router.get('/copies/:id', enforcePermissions, copyController)
+router.get('/copy/info/:id', enforcePermissions, copyController)
 
 /**
  * @swagger
@@ -90,7 +90,7 @@ router.post('/:id/copy', enforcePermissions, copyCreateController)
 
 /**
  * @swagger
- * /library/copies/update/{id}:
+ * /library/copy/update/{id}:
  *  put:
  *      summary: Check if POST method is working
  *      description: This API is used to check if POST method is working or not
@@ -112,11 +112,11 @@ router.post('/:id/copy', enforcePermissions, copyCreateController)
  *             200:
  *                 description: To test POST method
  */
-router.put('/copies/update/:id', enforcePermissions, updateCopyController)
+router.put('/copy/update/:id', enforcePermissions, updateCopyController)
 
 /**
  * @swagger
- * /library/copies/delete/{id}:
+ * /library/copy/delete/{id}:
  *  delete:
  *      summary: Check if DELETE method is working
  *      description: This API is used to check if DELETE method is working or not
@@ -133,7 +133,7 @@ router.put('/copies/update/:id', enforcePermissions, updateCopyController)
  *             200:
  *                 description: To test DELETE method
  */
-router.delete('/copies/delete/:id', enforcePermissions, deleteCopyController)
+router.delete('/copy/delete/:id', enforcePermissions, deleteCopyController)
 
 
 export default router

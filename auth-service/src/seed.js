@@ -28,13 +28,13 @@ export async function main() {
 
 export async function seedCasbinRules() {
   const casbinRules = [
-    { ptype: 'p', v0: 'admin', v1: 'permission.list', v2: 'read', v3: '*', v4: 'allow' },
-    { ptype: 'p', v0: 'admin', v1: 'permission.info', v2: 'read', v3: '*', v4: 'allow' },
-    { ptype: 'p', v0: 'admin', v1: 'permission', v2: 'write', v3: '*', v4: 'allow' },
-    { ptype: 'p', v0: 'admin', v1: 'permission.info', v2: 'update', v3: '*', v4: 'allow' },
+    { ptype: 'p', v0: 'admin', v1: 'auth.permission.list', v2: 'read', v3: '*', v4: 'allow' },
+    { ptype: 'p', v0: 'admin', v1: 'auth.permission.info', v2: 'read', v3: '*', v4: 'allow' },
+    { ptype: 'p', v0: 'admin', v1: 'auth.permission.newRule', v2: 'write', v3: '*', v4: 'allow' },
+    { ptype: 'p', v0: 'admin', v1: 'auth.permission', v2: 'update', v3: '*', v4: 'allow' },
     { ptype: 'p', v0: 'admin', v1: 'route.list', v2: 'read', v3: '*', v4: 'allow' },
     { ptype: 'p', v0: 'admin', v1: 'route.info', v2: 'read', v3: '*', v4: 'allow' },
-    { ptype: 'p', v0: 'admin', v1: 'route.info', v2: 'update', v3: '*', v4: 'allow' }
+    { ptype: 'p', v0: 'admin', v1: 'route', v2: 'update', v3: '*', v4: 'allow' }
   ]
 
   for (const rule of casbinRules) {

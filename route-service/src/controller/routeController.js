@@ -2,26 +2,46 @@ import {routesList, routeInfo, getResource, createRoute, updateRoute} from '../m
 import prisma from '../prismaClient.js'
 
 export const getRoutes = async (req, res) => {
-    const routeList = await routesList()
-    console.log(`Routes list`)
-    return res.json({routeList})
+    try {
+        const routeList = await routesList()
+        logger.info(`Routes list`)
+        return res.json({routeList})
+
+    } catch (err) {
+        logger.error(`Failed to get route list: ${err.message}`)
+
+
+    }
+    
 
 
 }
 
 export const getRoute = async (req, res) => {
     const id = parseInt(req.params.id)
-    const routeData = await routeInfo(id)
-    return res.json({routeData})
+    try {
+        const routeData = await routeInfo(id)
+        return res.json({routeData})
+
+    } catch (err) {
+        logger.error(`Failed to get route with ID ${id}: ${err.message}`)
+        
+    }
     
 
 }
 
 export const checkResource = async (req, res) => {
     const {request, obj} = req.body
-    const {resource, action} = await getResource(request, obj)
-    console.log(`Routes resource`)
-    return res.json({resource, action})
+    try {
+        const {resource, action} = await getResource(request, obj)
+        logger.info(`Routes resource`)
+        return res.json({resource, action})
+
+    } catch (err) {
+        logger.error(`Failed to get resource data: ${err.message}`)
+        
+    }
 
 
 }
@@ -50,7 +70,6 @@ export const syncRoute = async (req, res) => {
 
         }
     }
-    // console.log(results)
 
     return res.json(results)
     
@@ -58,10 +77,17 @@ export const syncRoute = async (req, res) => {
 }
 
 export const updatedRoute = async (req, res) => {
+    
     const id = parseInt(req.params.id)
-    const {resource, action} = req.body
-    const routeList = await updateRoute(id, resource, action)
-    res.status(200).send(`Updated route data`)
+    try {
+        const {resource, action} = req.body
+        const routeList = await updateRoute(id, resource, action)
+        res.status(200).send(`Updated route data`)
+
+    } catch (err) {
+        logger.error(`Failed to route date with ID ${id}: ${err.message}`)
+        
+    }
     
 
 }

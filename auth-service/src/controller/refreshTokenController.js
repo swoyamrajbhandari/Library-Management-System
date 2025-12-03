@@ -1,7 +1,7 @@
 import {getRefreshToken, refreshTokenStatus} from '../model/refreshTokenModel.js'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
-import logger from '../../loggers.js' 
+import logger from '../utils/loggers.js'  
 
 export const generateAndRefreshToken = async (req, res) => {
     const {refreshToken} = req.body  // jwt refreshtoken from return response of a register or a login.

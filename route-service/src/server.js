@@ -5,7 +5,7 @@ import cors from 'cors'
 import routes from './routes/routes.js'
 import extractRoutes from '../shared-middleware/extractRoutes.js'
 import axios from 'axios'
-import logger from '../loggers.js'
+import logger from './utils/loggers.js'
 
 const PORT = process.env.PORT || 5003
 

@@ -1,0 +1,1554 @@
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:49:22+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:49:22+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:49:22+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:49:22+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:49:22+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:49:22+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:49:22+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:54:35+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:54:35+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:54:35+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:54:35+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:54:35+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:54:35+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T10:54:35+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.info/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:08:23+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:10:05+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:10:05+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:10:05+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:10:05+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:10:05+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:10:05+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:10:05+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:44+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> permission.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> permission.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> permission/write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> permission.info/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.list/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.info/read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Casbin rule created: admin -> route.info/update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.role/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: admin ->  user.info/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: admin ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  book.copy/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  book.copy/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  book/ write',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  book/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  book.info/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  user\t\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: admin ->  librarian\t\t/undefined',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  book.copy.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  book.copy.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  auth.logout/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  user.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  user.info/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  user/ delete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  book.list/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: user ->  book.info/ read',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Imported rule: librarian ->  book.copy.status/ update',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:13:45+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:23:31+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:23:45+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:23:45+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:24:29+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:24:29+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:32:42+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:32:43+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:32:43+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:32:43+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:32:43+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:32:43+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:32:43+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:36:05+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:36:05+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:36:05+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:36:05+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:36:05+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:36:05+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:36:05+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:37:07+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:37:23+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:37:46+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:43:36+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:43:36+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:43:36+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:43:36+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:43:36+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:43:36+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:43:36+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:43:53+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:44:04+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:44:04+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:44:09+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:18+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:18+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:18+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:18+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:18+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:18+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:18+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:47:21+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:47:32+05:45'
+}
+{
+  message: false,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:47:50+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for null on null',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:47:50+05:45'
+}
+{
+  message: false,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:50:02+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for null on null',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:50:02+05:45'
+}
+{
+  message: false,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:50:43+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for null on null',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:50:43+05:45'
+}
+{
+  message: 'No token was provided',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:51:11+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:51:26+05:45'
+}
+{
+  message: false,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:51:46+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for null on null',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:51:46+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:58:02+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:58:02+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:58:02+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:58:02+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:58:02+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:58:02+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T11:58:02+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:00:44+05:45'
+}
+{
+  message: false,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:00:58+05:45'
+}
+{
+  message: 'Authorization not given to user: 1 for null on null',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:00:58+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:12:49+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:12:49+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:12:49+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:12:49+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:12:49+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:12:49+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:12:49+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:13:10+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:22+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:22+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:30+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:30+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:45:37+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:45:37+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:45:37+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:45:37+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:45:37+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:45:37+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:45:37+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:43+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:43+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:43+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:43+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:43+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:43+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:43+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T12:47:48+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T12:48:04+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T12:48:04+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T12:48:07+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T12:48:07+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:13:18+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:13:18+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:13:18+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:13:18+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:13:18+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:13:18+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:13:18+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:46:09+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:46:09+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:46:09+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:46:09+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:46:09+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:46:09+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:46:09+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:47:10+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:47:25+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.list',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:47:25+05:45'
+}
+{
+  message: 'Recieved casbin rule list',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:47:25+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:47:38+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:47:38+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 101',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:47:38+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:47:43+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:47:43+05:45'
+}
+{
+  message: 'Casbin rule with ID 1 not found',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:47:43+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 1',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:47:43+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:49:57+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:49:57+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:49:57+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:49:57+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:49:57+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:49:57+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:49:57+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:50:19+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:50:19+05:45'
+}
+{
+  message: 'Casbin rule with ID 1 not found',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:50:19+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 1',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:50:19+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:07+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:08+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:08+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:08+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:08+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:08+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:08+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:53:52+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:53:52+05:45'
+}
+{
+  message: 'Casbin rule with ID 1 not found',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:52+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 1',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:52+05:45'
+}
+{
+  message: 'Error fetching Casbin rule info for ID 1: Cannot set headers after they are sent to the client',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:52+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:53:57+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:53:57+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 100',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:53:57+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:54:18+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for write on permission',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T14:54:18+05:45'
+}
+{
+  message: 'New rule created',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T14:54:18+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:11+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:11+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:11+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:11+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:11+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:11+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:11+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:16:32+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:16:33+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 100',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:33+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:16:37+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:16:37+05:45'
+}
+{
+  message: 'Casbin rule with ID 1 not found',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:37+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 1',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:37+05:45'
+}
+{
+  message: 'Error fetching Casbin rule info for ID 1: Cannot set headers after they are sent to the client',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:16:37+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:17:01+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:17:23+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on permission.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:17:23+05:45'
+}
+{
+  message: 'Casbin rule with ID 1 not found',
+  level: 'warn',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:17:23+05:45'
+}
+{
+  message: 'Recieved casbin rule info for ID: 1',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:17:23+05:45'
+}
+{
+  message: 'Error fetching Casbin rule info for ID 1: Cannot set headers after they are sent to the client',
+  level: 'error',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:17:23+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:04+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:04+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:04+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:04+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:04+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:04+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:04+05:45'
+}
+{
+  message: 'User: admin logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:16+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:40:26+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:44:40+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:44:40+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:44:40+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:44:40+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:44:40+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:44:40+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T15:44:40+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:08+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:08+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:08+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:08+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:08+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:08+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:08+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-02T16:00:24+05:45'
+}

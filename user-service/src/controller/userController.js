@@ -1,37 +1,47 @@
 import {userList,findUser, newUserCreate, updateUser, deleteUser} from '../model/userModel.js'
-import logger from '../../loggers.js'  
+import logger from '../utils/loggers.js'  
 import axios from 'axios'
 
 // Gets the list of all users
 export const userListController = async (req, res) => {
-    // if (req.user.role !== 'admin') {
-    //     logger.warn(`Permission denied: User ${req.user.id} tried to access list of users`)
-    //     return res.send('Permission denied!')
-    // }
-    
-    const users = await userList()
-    logger.info('Got list of users')
-    res.json({users})
+    try {
+        const users = await userList()
 
+        if (users.length === 0) {
+            logger.warn(`No Users found in database `)
+            res.send(`Empty user table`)
+        }
+
+        logger.info('Got list of users')
+        res.json({users})
+
+    } catch (err) {
+        logger.error(`Failed to fetch User list: ${err.message}`)
+
+    }
+    
 }
 
 // Gets the user for given id
 export const findUserController = async (req, res) => {
     const id = parseInt(req.params.id)
-    // if (req.user.role !== 'admin' && id !== req.user.id) {
-    //     logger.warn(`Permission denied: User ${req.user.id} tried to access User ${id}`)
-    //     return res.send('Permission denied!')
-    // }
 
-    const user = await findUser(id)
+    try {
+        const user = await findUser(id)
 
-    if(!user) {
-        logger.warn(`No user found with ID: ${id} `)
-        return res.status(404).send('No user found')
-    }
+        if(!user) {
+            logger.warn(`No user found with ID: ${id} `)
+            return res.status(404).send(`No user found with ID: ${id}`)
+        }
+
+        logger.info(`Got User with id:${id}`)
+        res.json({user})
+
     
-    logger.info(`Got User with id:${id}`)
-    res.json({user})
+    } catch (err) {
+        logger.error(`Error fetching User info for ID ${id}: ${err.message}`);
+        
+    }
 
 
 }
@@ -40,13 +50,16 @@ export const findUserController = async (req, res) => {
 export const userCreate = async (req, res) => {
     const info = req.body
     const authId = req.user.id
-    console.log(info)
-    // console.log(req.user)
-    // console.log(req.user.id)
-    const profile = await newUserCreate(authId, info)
 
-    logger.info(`User: ${info.username} created`)
-    res.json({profile})
+    try {
+        const profile = await newUserCreate(authId, info)
+        logger.info(`User: ${info.username} created`)
+        res.json({profile})
+
+    } catch (err) {
+        logger.error(`Failed to create new User: ${err.message}`)
+        
+    }
 
 }
 
@@ -54,12 +67,6 @@ export const userCreate = async (req, res) => {
 export const updateUserInfo = async (req, res) => {
     const target = parseInt(req.params.id)
     const data = req.body
-    console.log(req.user.role)
-    
-    // if (req.user.role !=='admin' && req.user.id !== target  ) {
-    //     logger.warn(`Permission denied: User ${req.user.id} tried to access User ${target}`)
-    //     return res.status(403).send('Permission denied')
-    // }
 
     let update
     try {
@@ -88,10 +95,6 @@ export const updateUserInfo = async (req, res) => {
 export const deleteUserController = async (req, res) => {
     const userId = parseInt(req.params.id)
 
-    // if (req.user.role !== 'admin' && userId !== req.user.id) {
-    //     logger.warn(`Permission denied: User ${req.user.id} tried to delete User ${target}`)
-    //     return res.send('Permission denied!')
-    // }
     try{
         await deleteUser(userId)
 

@@ -1,6 +1,6 @@
 import prisma from '../src/prismaClient.js'
 import bcrypt from 'bcryptjs'
-import logger from '../loggers.js'  // for logging (replacing normal console.log)
+import logger from './utils/loggers.js'  // for logging (replacing normal console.log)
 import prisma2 from '../shared-middleware/prismaClient.js'
 import fs from 'fs'
 import csv from 'csv-parser'
@@ -32,7 +32,9 @@ export async function seedCasbinRules() {
     { ptype: 'p', v0: 'admin', v1: 'permission.info', v2: 'read', v3: '*', v4: 'allow' },
     { ptype: 'p', v0: 'admin', v1: 'permission', v2: 'write', v3: '*', v4: 'allow' },
     { ptype: 'p', v0: 'admin', v1: 'permission.info', v2: 'update', v3: '*', v4: 'allow' },
-    { ptype: 'p', v0: 'admin', v1: 'permission', v2: 'delete', v3: '*', v4: 'allow' }
+    { ptype: 'p', v0: 'admin', v1: 'route.list', v2: 'read', v3: '*', v4: 'allow' },
+    { ptype: 'p', v0: 'admin', v1: 'route.info', v2: 'read', v3: '*', v4: 'allow' },
+    { ptype: 'p', v0: 'admin', v1: 'route.info', v2: 'update', v3: '*', v4: 'allow' }
   ]
 
   for (const rule of casbinRules) {

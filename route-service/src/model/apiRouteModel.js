@@ -1,22 +1,45 @@
 import prisma from '../prismaClient.js'
 
 // get resouce and not route (for axios from shared-middlewate)
-export async function getResource(method, route){
+export async function getResource(method, route) {
     console.log(`Getting resource for method: ${method}, route: ${route}`);
-    const routeData = await prisma.aPIRoutes.findFirst({
-        where: {
-            method,
-            route
-        }
-    })
-    console.log(`Found route data: ${JSON.stringify(routeData)}`);
-
-    if (!routeData){
-        return {resource: null, action: null}
-    }
     
-    return { resource: routeData.resource, action: routeData.action }
+    const routes = await prisma.aPIRoutes.findMany({  //find all matching method entries into a list
+        where: {
+            method
+        }
+    });
 
+    const incomingRouteParts = route.split('/').filter(p => p) //the route passed as parameter split into components
+
+    for (const storedRoute of routes) { //each matching method entries
+        const storedRouteParts = storedRoute.route.split('/').filter(p => p) //split path into components
+                                                                             //filter(p => p) removes all falsy values from the array. 
+                                                                             // In JavaScript, '' (empty string) is falsy.
+
+        if (incomingRouteParts.length !== storedRouteParts.length) { //matches length of passed route with api_route entries
+            continue
+        }
+
+        let match = true;
+        for (let i = 0; i < storedRouteParts.length; i++) {
+            if (storedRouteParts[i].startsWith(':')) {
+                continue   //skips current iteration
+            }
+            if (storedRouteParts[i] !== incomingRouteParts[i]) {
+                match = false;
+                break
+            }
+        }
+
+        if (match) {
+            console.log(`Found route data: ${JSON.stringify(storedRoute)}`)
+            return { resource: storedRoute.resource, action: storedRoute.action }
+        }
+    }
+
+    console.log(`Found no matching route for: ${route}`)
+    return { resource: null, action: null }
 }
 
 export async function routesList(){

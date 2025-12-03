@@ -4,7 +4,7 @@ import userInfoRoutes from './routes/userInfoRoutes.js'
 import userMiddleware from './middleware/userMiddleware.js'
 import swaggerJSDoc from 'swagger-jsdoc'
 import swaggerUi from 'swagger-ui-express'
-import logger from '../loggers.js'
+import logger from './utils/loggers.js'
 import axios from 'axios'
 import extractRoutes from '../shared-middleware/extractRoutes.js'
 const PORT = process.env.PORT || 5001

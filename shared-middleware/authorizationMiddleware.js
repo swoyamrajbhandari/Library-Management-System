@@ -27,7 +27,7 @@ async function enforcePermissions(req, res, next) {
     const enforcer = await getEnforcer()
 
     const allowed = await enforcer.enforce(role, resource, action, targetId, owner)
-    logger.info(allowed)
+    logger.info(`Authorization given to user: ${owner} for ${action} on ${resource}`)
 
     if (!allowed) {
         logger.info(`Authorization not given to user: ${owner} for ${action} on ${resource}`)

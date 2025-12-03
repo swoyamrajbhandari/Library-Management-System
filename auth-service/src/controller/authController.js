@@ -3,7 +3,7 @@ import {addRefreshToken } from '../model/refreshTokenModel.js'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import axios from 'axios' 
-import logger from '../../loggers.js'  
+import logger from '../utils/loggers.js'  
 
 // Registers new users
 export const registerController =  async (req, res) => {
@@ -13,7 +13,6 @@ export const registerController =  async (req, res) => {
     
     try {
         const user = await registerUser(username, hashedPassword)
-        console.log(user)
 
         // jwt.sign(payload, secretOrPrivateKey, [options, callback])
         // Can be an object or string. 
@@ -124,7 +123,6 @@ export const deleteUserController = async (req, res) => {
 
 export const changeUserRole = async (req, res) => {
     const targetId = parseInt(req.params.id)
-    const {role} = req.user
     const newRole = req.body.role
 
     if (targetId === 1){

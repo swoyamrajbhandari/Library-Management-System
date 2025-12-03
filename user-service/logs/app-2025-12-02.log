@@ -1,0 +1,444 @@
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T05:03:56Z'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T05:03:56Z'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T05:03:56Z'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T10:54:08+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T10:54:08+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T10:54:08+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:07:56+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:07:56+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:07:56+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:09:37+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:09:37+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:09:37+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:13:16+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:13:16+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:13:16+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:31:57+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:31:57+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:31:57+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:35:36+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:35:36+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:35:36+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:43:06+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:43:06+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:43:06+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:46:44+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:46:44+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:46:44+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:56:39+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:56:39+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:56:39+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:57:34+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:57:34+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T11:57:34+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:12:20+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:12:20+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:12:20+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:48+05:45'
+}
+{
+  message: 'Got list of users',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:48+05:45'
+}
+{
+  message: true,
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:54+05:45'
+}
+{
+  message: 'Got User with id:3',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:13:54+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:45:11+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:45:11+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:45:11+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:47:14+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:47:14+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T12:47:14+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:12:38+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:12:38+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:12:38+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:45:43+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:45:43+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:45:43+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:49:29+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:49:29+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:49:29+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:52:41+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:52:41+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T14:52:41+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:15:41+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:15:41+05:45'
+}
+{
+  message: 'connect ECONNREFUSED 172.18.0.4:5003',
+  level: 'error',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:15:41+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on user.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:17:41+05:45'
+}
+{
+  message: 'Got User with id:3',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:17:41+05:45'
+}
+{
+  message: 'Authorization given to user: 1 for read on user.info',
+  level: 'info',
+  service: 'Casbin middleware',
+  timestamp: '2025-12-02T15:17:47+05:45'
+}
+{
+  message: 'No user found with ID: 11 ',
+  level: 'warn',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:17:47+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:39:35+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:39:35+05:45'
+}
+{
+  message: 'connect ECONNREFUSED 172.18.0.4:5003',
+  level: 'error',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:39:35+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:44:10+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:44:10+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:44:10+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:59:37+05:45'
+}
+{
+  message: 'Server is running on PORT5001',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:59:37+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Library Service',
+  timestamp: '2025-12-02T15:59:37+05:45'
+}

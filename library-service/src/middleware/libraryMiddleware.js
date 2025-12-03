@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import loggers from '../../loggers.js'
+import loggers from '../utils/loggers.js'
 
 function libraryMiddleware(req, res, next) {
     const libToken = req.headers['authorization']

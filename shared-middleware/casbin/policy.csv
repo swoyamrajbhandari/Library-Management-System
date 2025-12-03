@@ -20,8 +20,5 @@ p, user, user, delete, self, allow
 p, user, book.list, read, *, allow
 p, user, book.info, read, *, allow
 p, librarian, book.copy.status, update, *, allow
-p, admin, route.list, read, *, allow
-p, admin, route.info, read, *, allow
-p, admin, route.info, update, *, allow
 
 

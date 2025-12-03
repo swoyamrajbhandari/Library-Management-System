@@ -53,7 +53,7 @@ router.get('/permission/list', authMiddleware, enforcePermissions, ruleList)
 
 /**
  * @swagger
- * /auth/permission/info:
+ * /auth/permission/info/{id}:
  *  get:
  *      summary: Check if GET method is working
  *      description: This API is used to check if GET method is working or not
@@ -70,7 +70,7 @@ router.get('/permission/list', authMiddleware, enforcePermissions, ruleList)
  *             200:
  *                 description: To test GET method
  */
-router.get('/permission/info', authMiddleware, enforcePermissions, ruleInfo)
+router.get('/permission/info/:id', authMiddleware, enforcePermissions, ruleInfo)
 
 /**
  * @swagger

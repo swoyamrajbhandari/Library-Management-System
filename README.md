@@ -17,7 +17,8 @@ A comprehensive, micro-services based Library Management System designed to hand
 *   **ORM:** Prisma
 *   **Authorization:** Casbin
 *   **Containerization:** Docker
-*   **Logging:** Winston logging 
+*   **Logging:** Winston logging
+*   **Testing:** Swagger 
 
 ## Architecture
 The system employs a micro-servise based architecture. The services are as follows:
@@ -42,4 +43,10 @@ The system employs a micro-servise based architecture. The services are as follo
 git clone https://github.com/swoyamrajbhandari/Library-Management-System.git
 cd Library_management_system
 ```
+
+2.  **Enviroment Variables:**
+Each micro-service (auth-service, user-service, route-service, and library-service) and the root project has `.env.example` file.
+*   Copy `.env.example` to `.env` in the root directory and each service directory (`auth-service/.env`, `library-service/.env`, etc.).
+*   Update the `.env` files with your specific configurations (e.g., database connection strings, JWT secrets, port numbers).
+
 

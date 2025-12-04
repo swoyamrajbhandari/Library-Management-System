@@ -46,7 +46,13 @@ cd Library_management_system
 
 2.  **Enviroment Variables:**
 Each micro-service (auth-service, user-service, route-service, and library-service) and the root project has `.env.example` file.
-*   Copy `.env.example` to `.env` in the root directory and each service directory (`auth-service/.env`, `library-service/.env`, etc.).
+*   Copy `.env.db.example` to `.env.db` & `.env.pg.example` to `.env.pg` in the root directory and `.env.example` to `.env` for each service directory (`auth-service/.env`, `library-service/.env`, etc.).
 *   Update the `.env` files with your specific configurations (e.g., database connection strings, JWT secrets, port numbers).
+
+3.  **Build and Run with Docker Compose:** 
+```bash
+docker compose up --build --no-cache
+docker compose up -d
+```
 
 

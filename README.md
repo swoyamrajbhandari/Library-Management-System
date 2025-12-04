@@ -18,3 +18,28 @@ A comprehensive, micro-services based Library Management System designed to hand
 *   **Authorization:** Casbin
 *   **Containerization:** Docker
 *   **Logging:** Winston logging 
+
+## Architecture
+The system employs a micro-servise based architecture. The services are as follows:
+
+*   **`auth-service`:** Handles user authentication (login, registration) and manages user permissions.
+*   **`user-service`:** Helps manage user profiles and related data.
+*   **`library-service`:** Manages the book catalog, including their meta-data and individual book copies.
+*   **`route-service`:** Dynamically stores endpoint routes from across all services in the db and helps in managing them.
+*   **`shared-middleware`:** A shared middleware/module between all microservices that shares functionalities such as authorization (Casbin enforcer), extractRoutes, casbin_rule Prisma client setup, reloadPolicy.
+
+## Getting started
+
+### Prequisites
+*   Docker and Docker Compose/Docker desktop installed
+* Node.js (for local development and testing outside docker)
+*   Git
+
+### Installation & setup
+
+1.  **Clone the repository:**
+```bash
+git clone https://github.com/swoyamrajbhandari/Library-Management-System.git
+cd Library_management_system
+```
+

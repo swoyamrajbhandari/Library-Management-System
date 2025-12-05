@@ -40,3 +40,93 @@
   service: 'Authentication Service',
   timestamp: '2025-12-04T09:16:03+05:45'
 }
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T11:40:14+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T11:40:14+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T11:40:14+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T11:40:14+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T11:40:14+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T11:40:14+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T11:40:14+05:45'
+}
+{
+  message: 'Running seed...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:14:54+05:45'
+}
+{
+  message: 'Admin already exists.',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:14:54+05:45'
+}
+{
+  message: 'policy.csv import complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:14:54+05:45'
+}
+{
+  message: 'Seed complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:14:54+05:45'
+}
+{
+  message: 'Sending axios request...',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:14:54+05:45'
+}
+{
+  message: 'Server is running on PORT5000',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:14:54+05:45'
+}
+{
+  message: 'Route sync complete',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:14:54+05:45'
+}
+{
+  message: 'User: kuuga logged in',
+  level: 'info',
+  service: 'Authentication Service',
+  timestamp: '2025-12-04T14:18:12+05:45'
+}

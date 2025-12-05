@@ -24,7 +24,7 @@ const options = {
         },
         servers: [
             {
-               url: 'http://localhost:5003'
+               url: `http://localhost:${PORT}`
             }, 
     
         ]
@@ -42,7 +42,7 @@ async function routeSync() {
     //logger.info(registerRoutes)
 
     logger.info("Sending axios request...")
-    const res = await axios.post("http://routeservice:5003/route/sync", {
+    const res = await axios.post(`http://routeservice:${PORT}/route/sync`, {
         service:"routeservice",
         registerRoutes
 

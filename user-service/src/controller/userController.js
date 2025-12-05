@@ -1,6 +1,7 @@
 import {userList,findUser, newUserCreate, updateUser, deleteUser} from '../model/userModel.js'
 import logger from '../utils/loggers.js'  
 import axios from 'axios'
+const PORTauth = process.env.PORTauth || 5000
 
 // Gets the list of all users
 export const userListController = async (req, res) => {
@@ -72,7 +73,7 @@ export const updateUserInfo = async (req, res) => {
     try {
         update = await updateUser(target, data)
 
-        await axios.put(`http://authservice:5000/auth/update/${target}`, {
+        await axios.put(`http://authservice:${PORTauth}/auth/update/${target}`, {
             username: update.username
 
         }, {
@@ -98,7 +99,7 @@ export const deleteUserController = async (req, res) => {
     try{
         await deleteUser(userId)
 
-        await axios.delete(`http://authservice:5000/auth/delete/${userId}`,{
+        await axios.delete(`http://authservice:${PORTauth}/auth/delete/${userId}`,{
             headers: {
                 "Content-type": "application/json"
             }

@@ -8,6 +8,7 @@ import logger from './utils/loggers.js'
 import axios from 'axios'
 import extractRoutes from '../shared-middleware/extractRoutes.js'
 const PORT = process.env.PORT || 5001
+const PORTroute = process.env.PORTroute || 5003
 
 const app = express()
 
@@ -25,7 +26,7 @@ const options = {
         servers: [
         
             {
-                url: 'http://localhost:5001'
+                url: `http://localhost:${PORT}`
             }
         ]
     },
@@ -41,7 +42,7 @@ async function routeSync() {
     const registerRoutes = await extractRoutes(app, '/user')
 
     logger.info("Sending axios request...")
-    const res = await axios.post("http://routeservice:5003/route/sync", {
+    const res = await axios.post(`http://routeservice:${PORTroute}/route/sync`, {
         service:"userservice",
         registerRoutes
 

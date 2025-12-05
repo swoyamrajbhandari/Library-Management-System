@@ -2,13 +2,18 @@ import {getRuleList, getRuleInfo, createNewRule, updateRule, removeRule} from '.
 import logger from '../utils/loggers.js'
 import axios from 'axios'
 
+const PORT = process.env.PORT || 5000
+const PORTuser = process.env.PORTuser || 5001
+const PORTlibrary = process.env.PORTlibrary || 5002
+const PORTroute = process.env.PORTroute || 5003
+
 
 export async function broadcastPolicyReload(token) { 
     const services = [
-        "http://authservice:5000/auth",
-        "http://userservice:5001/user",
-        "http://libraryservice:5002/library",
-        "http://routeservice:5003/route"
+        `http://authservice:${PORT}/auth`,
+        `http://userservice:${PORTuser}/user`,
+        `http://libraryservice:${PORTlibrary}/library`,
+        `http://routeservice:${PORTroute}/route`
 
     ]   
     

@@ -4,6 +4,7 @@ import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import axios from 'axios' 
 import logger from '../utils/loggers.js'  
+const PORTuser = process.env.PORTuser || 5001
 
 // Registers new users
 export const registerController =  async (req, res) => {
@@ -25,7 +26,7 @@ export const registerController =  async (req, res) => {
         
         const done = await addRefreshToken(user.id, hashedRefreshToken)
         
-        await axios.post('http://userservice:5001/user/create', {
+        await axios.post(`http://userservice:${PORTuser}/user/create`, {
             userId: user.id,
             username,
             email: null,
